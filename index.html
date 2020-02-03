@@ -1,2 +1,18 @@
 our project
 
+
+function draw (e){
+    if (isMouseDown) return;
+     ctx.beginPath();
+    const centerX= canvas.width / 2;
+    const centerY= canvas.height /2;
+     ctx.arc(centerX, centerY, 100, 0, Math.PI * 2 );
+     ctx.lineWidth = 3.5;
+     ctx.stroke ();
+     ctx.beginPath();
+     ctx.moveTo(265, 250);
+     ctx.lineTo(350, 300);
+     ctx.lineTo(265, 360);
+     ctx.lineTo(265, 250);
+     ctx.fill();
+}
